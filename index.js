@@ -16,8 +16,7 @@ const fToC = function(fahrenheit) {
 }
 */
 
-/*
-Task 2
+/* Task 2
 document.getElementById("Number1").onclick = function() {
     document.getElementById("Number1").value = Math.floor(Math.random() * 10) + 1;
 };
@@ -27,8 +26,8 @@ document.getElementById("Number2").onclick = function() {
 };
 
 document.getElementById("Resultat").onclick = function() {
-    const number1 = document.getElementById("Number1").value;
-    const number2 = document.getElementById("Number2").value;
+    const number1 = parseInt(document.getElementById("Number1").value);
+    const number2 = parseInt(document.getElementById("Number2").value);
     
     const outputMessage = number1 > number2 ? ` ${number1} er større enn ` + number2 :
                         number1 < number2 ? ` ${number2} er større enn ` + number1 :
@@ -68,7 +67,7 @@ function ColorChange1() {
 }
 
 function ColorChange2() {
-	document.getElementById("Div2").style.background = ["red"];
+	document.getElementById("Div2").style.background = ["blue"];
 }
 
 function ColorChangeRandom() {
